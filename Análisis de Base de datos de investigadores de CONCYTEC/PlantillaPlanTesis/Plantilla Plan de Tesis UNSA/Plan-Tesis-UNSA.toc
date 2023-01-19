@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Motivación y Contexto}{6}
+\contentsline {section}{\numberline {2}Definición del Problema}{6}
+\contentsline {section}{\numberline {3}Objetivos}{6}
+\contentsline {subsection}{\numberline {3.1}Objetivo Principal}{6}
+\contentsline {subsection}{\numberline {3.2}Objetivos Específicos}{7}
+\contentsline {section}{\numberline {4}Trabajos Relacionados}{7}
+\contentsline {section}{\numberline {5}Propuesta}{7}
+\contentsline {section}{\numberline {6}Cronograma de Actividades}{7}
+\contentsline {section}{\numberline {7}Indice Tentivo de la Tesis}{8}

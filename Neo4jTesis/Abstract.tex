@@ -1,0 +1,11 @@
+\chapter*{Abstract}
+\hrule \bigskip \vspace*{1cm}
+Generating high-quality images from text descriptions is a challenging problem in computer vision. Almost all existing Generative Text-to-Image Adversarial Networks first generate an initial image with approximate shape and color, and then refine the initial image to a high resolution one, but most existing text-to-image generation methods have two problems main. (1) These methods are highly dependent on the quality of the initial images. If the initial image is not initialized properly, the following processes can hardly refine the image to a satisfactory quality. (2) Each word brings a different level of importance when representing different image content, however, the unchanged text representation is used in existing image refinement processes.
+
+In the present work we focus on the analysis of the Dynamic Memory Generative Adversarial Network (DM-GAN) for the generation of high quality images from a descriptive text. In accordance with the problems that occur in other methods, this dynamic memory network introduces a dynamic memory module to refine the content of the blurred image, when the initial images are not well generated.
+It uses a memory write gate that is designed to select important text information based on the content of the initial image, allowing the method to accurately generate images from the text description. It also uses a response gate to adaptively merge information read from memories and image characteristics.
+
+The evaluation of the DM-GAN model is performed with the Caltech-UCSD Birds 200 data set. The experimental results show that the DM-GAN model performs favorably against the more advanced approaches, this allows the method to generate images with precision from the text description.
+
+\keywords {Generation of images, Generative Adversarial Networks, descriptive text}
+

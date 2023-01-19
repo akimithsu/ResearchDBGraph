@@ -1,0 +1,43 @@
+\documentclass[a4paper,openany,12pt]{article}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{ae}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[printonlyused]{acronym}
+\usepackage{hlundef}
+\usepackage{plan-tesis-UNSA}
+
+\title{Título de la Tesis}
+
+\author{Nombre completo del Autor de la Tesis}
+
+\orientador{Prof Dr./Mag./Ing. Nombre del Asesor}
+
+\begin{document}
+\maketitle %Compone la carátula y la dedicatoria
+
+\include{abreviaturas}
+
+\tableofcontents %Inserta el índice general
+\pagebreak
+
+\listoftables %Inserta el índice de cuadros
+\pagebreak
+
+\listoffigures %Inserta el índice de figuras
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   En esta parte deberas incluir el archivo con todo el texto del plan de tesis   %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Contenido} %Inserta el capítulo 1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+\bibliography{Bibliog}
+%\addcontentsline{toc}{chapter}{Bibliografía}
+
+\end{document}

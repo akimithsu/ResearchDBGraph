@@ -1,0 +1,56 @@
+\chapter{Introducción General}
+
+\section{Introducción}
+Las universidades públicas y privadas presentan la necesidad de contactar,contratar y encontrar investigadores en áreas en específico, ya sea para ayudar a los alumnos en su asesoramiento para sus proyectos de tesis o para dirigir proyectos de pregrado, para estos fines se evaluan de diversas maneras y puntos de referencia dados por los interesados. Esta toma de decisiones ayuda a los interesados tener veracidad y respaldo de calidad en el área de investigación.Para esto se opta a buscar en bases de datos públicas las cuales brindan dicha información realizando largas búsquedas para encontrar a los investigadores de su interés. Concretamente en el Perú la página de DINA de Concytec brinda información de los investigadores como bibliografía, experiencia profesional, datos académicos, producción científicas, proyectos de investigación entre otros dotas los cuales pueden ser de gran utilidad para dicho objetivo .
+
+\section{Definición del problema}
+Las búsquedas largas en páginas como DINA son muy engorrosas ya que no solo es encontrar a un sector de investigadores de su interés sino también leer los datos en forma de texto y sus curriculum vitae respectivos.
+Además, existen datos abstractos del interés académico que no se muestran en dicha página las cuales las relaciones de estas a menudo son hasta necesario consultar con el mismo investigador para saber si tiene lo que se busca o no, como que si tiene contacto con el extrangero, si conoce a colegas o investigadores de su rama entre otras cosas.\\
+%%%%%%Así como ya esta, ¿que problema existe actualmente?, respecto a lo
+%que quieres proponer o mostrar.
+Al plantear el traslado de los datos a una base de datos lo mas común es hacerlo a una base de datos relacional en lenguaje SQL , sin embargo, al momento de hacer consultas para encontrar un dato determinado se usan demasiados comandos de consultas JOIN , los cuales, si bien es cierto que es mas fácil la interacción con datos existen bases de datos que pueden brindar los datos requeridos de manera óptima como una base de datos basada en grafos.
+%\section{Justificación}
+
+%¿porque estas desarrollando esta tesis?
+
+\section{Objetivos}
+\subsection{Objetivo General}
+\begin{itemize}
+    \item Analizar el funcionamiento de la base de datos basada en grafos de DINA.
+\end{itemize}
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+\item  Realizar el traslado de datos de la página de DINA a una base de datos basada en gráfos
+\item Usar Neo4j para probar el funcionamiento con datos de investigadores de la UNSA
+\item Realizar un análisis de algunas relaciones hechas en cypher (lenguaje de consultas de Neo4j)
+\item Mostrar gráfos de las consultas obtenidas.
+\end{itemize}
+\section{Hipótesis}
+La herramienta Neo4j es muy útil para la creación y el análisis base de datos.
+\section{Estado del Arte}
+El enfoque dado para el muestreo de investigadores es eficiente para la búsqueda concreta de los investigadores de interés y se demuestra el funcionamiento de esta base de datos basa den grafos y cuan eficiente es este modelo \cite{afandi2020university}.
+Dina no es la única fuente de datos de investigadores a nivel mundial, en este artículo plantea la visualización de datos de DSPACE en Neo4j y Dephi herramientas de visualización de código de acceso libre y apliaciones desktop \cite{aryani2017visualising}.
+Para tener un buen análisis de una herramienta de creación de base de datos basado en grafos como Neo4j se debe evaluar como el back-end trabajado en esta aplicaciónayuda a los desarrolladores para su fácil entendimiento\cite{holzschuher2013performance}.\\
+Para analizar a fondo la creación de la base de datos se deben evaluar la relación entre atributos y la asociación que estos presentan con la base de datos.\cite{lu2017analysis}.También se deben evaluar las consultas y transacciones que se pueden realizar en la base de datos creada en Neo4j\cite{vukotic2015neo4j}.\\
+Neo4j al ser una herramienta basada en grafos, es evidente que la base de datos creada sea basada en grafos, esta puede ser planteada en una base de datos distribuida como las social networks la cual ,tal como la base de datos general, de Neo4j esta también puede ser visualizada de manera óptima\cite{agudo2020base}.\\
+Como toda aplicación Neo4j tiene ventajas y desventajas en su uso, las cuales mediante comparaciones con diversas aplicaciones pueden ayudar al usuario a decidir si es factible o no usar dicha herramienta\cite{fernandes2018graph}.Las limitaciones que esta herramienta presenta pueden ser evaluados por su interacción de la base de datos con las consultas y con los datos los cuales demuestran que Neo4j es una herramienta optimizable\cite{miller2013graph}.\\
+El análisis de una herramienta como Neo4j también puede ser evaluado por el tiempo de demora de la creación de la base de datos y su complejidad de consultas comparadas con otra herramienta como PostgreSQL.\cite{stothers2020can}.
+Neo4j no solo sirve para bases de datos convensionales , sino también ayudan para el mejor control de la semántica e interacción de las bases de datos como las redes sociales y web semántica\cite{guia2017graph}.
+
+\section{Marco Teórico}
+
+\section{Variables de investigación}
+\subsection{Variables Independientes}
+\begin{itemize}
+    \item Análisis
+    \item Perspectivas
+\end{itemize}
+\subsection{Variables Dependientes}
+\begin{itemize}
+    \item Base de datos basado en grafos
+    \item Investigadores de Concytec
+\end{itemize}
+%\section{Organización de la tesis}
+
+%Una breve descripción de cada uno de los capítulos que estas desarrollando desde el CAP 2 hasta el capitulo antes del apéndice.

@@ -1,0 +1,123 @@
+%\NeedsTeXFormat{LaTeX2e}[01/06/2002]
+%\ProvidesClass{UNSAtesis}[19/03/2007 v1.0 UCSP Formato de tesis para la UNSA]
+
+%\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+%\ProcessOptions*
+%\LoadClass[a4paper,openany,12pt]{book}
+
+%*****************************************************************************
+%Definiendo Paquetes
+%*****************************************************************************
+
+%*****************************************************************************
+%Diseñando Carátula
+%*****************************************************************************
+\renewcommand{\maketitle}
+{
+    \thispagestyle{empty}
+
+    \begin{figure}[h]
+    \center
+    \includegraphics[scale = 0.50]{unsa}
+    \end{figure}
+
+    \begin{center}
+        \vspace*{1cm}
+        {\Large \textbf \@title \par}
+        \vspace*{3cm}
+        {\large \textbf \@author}\\
+        \vspace*{\stretch{1}}
+        \textbf{Orientador: \@orientador}
+        \vspace*{\stretch{1}}
+    \end{center}
+        \presentar
+        \vspace*{\stretch{1}}
+    \begin{center}
+        \textbf{UNSA - Universidad Nacional de San Agustín de Arequipa}\\
+        \textbf{ $\,$\mes\ de\ \the\year$\,$}
+    \end{center}
+    \pagebreak
+}
+
+
+%*****************************************************************************
+%Diseñando presentación
+%*****************************************************************************
+\newcommand{\presentacion}{\gdef\@presentacion}
+\presentacion{Plan de Tesis presentado la Escuela
+Profesional Ciencia de la Computación como paso previo
+a la elaboración de la Tesis Profesional.}
+
+\newcommand{\presentar}
+{
+    \begin{flushright}
+        \begin{tabular}{p{10cm}}
+            \normalsize\it\@presentacion
+        \end{tabular}
+    \end{flushright}
+}
+
+
+%*****************************************************************************
+%Diseñando Orientador
+%*****************************************************************************
+\newcommand{\orientador}{\gdef\@orientador}
+
+
+
+%*****************************************************************************
+%Diseñando Encabezado y Pie de Página
+%*****************************************************************************
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
+\fancyfoot[L]{Ciencia de la Computación - UNSA}
+\fancyfoot[R]{\thepage}
+%\renewcommand{\chaptermark}[1]
+%    {\markboth{\MakeUppercase{\chaptername}\ \thechapter. #1}{}}
+\renewcommand{\sectionmark}[1]
+    {\markright{\thesection. #1}}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+%*****************************************************************************
+%Diseñando Párrafos
+%*****************************************************************************
+\parindent 1cm
+\parskip 0.4cm
+
+
+%*****************************************************************************
+%Diseñando la Bibliografía
+%*****************************************************************************
+\newcommand{\bibliografia}[1]
+{
+
+}
+
+
+%*****************************************************************************
+%Mensajes de Error
+%*****************************************************************************
+\renewcommand{\@title}{\ClassError{UNSA}{Falta especificar \string\title{}}
+ {Use el comando \string\title{} en el preambulo para especificar \MessageBreak
+  el titulo de su tesis.}}
+\renewcommand{\title}[1]{\gdef\@title{#1}}
+
+\renewcommand{\@author}{\ClassError{UNSA}{Falta especificar \string\author{}}
+ {Use el comando \string\author{} en el preambulo para especificar su nombre.}}
+\renewcommand{\author}[1]{\gdef\@author{#1}}
+
+
+%*****************************************************************************
+%Nombre de mes
+%*****************************************************************************
+\newcommand{\mes}{\ifcase\month\or Enero\or Febrero\or
+      Marzo\or Abril\or Mayo\or Junio\or Julio\or Agosto\or Septiembre\or
+      Octubre\or Noviembre\or Diciembre\fi}
+
+
+%*****************************************************************************
+\endinput

@@ -1,0 +1,55 @@
+\documentclass[5pt,openright,final]{unsa}
+\title{Base de datos basado en grafos de investigadores de Concytec para un análisis de diversas perspectivas}
+\author{Rodrigo Alexander Mamani Sucacahua}%
+% of being the case
+\date{10 de octubre del 2021}
+\dedicate{A Dios, por todo lo que me ha dado, a todos los profesores
+por sus enseñanzas. a amigos y familiares por el apoyo.}
+
+
+\usepackage[options ]{algorithm2e}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{glossaries}
+
+
+\setcounter{secnumdepth}{3}
+\begin{document}%%%%%%%%-------------------------------------------------------
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+    \makeSecondCover %
+\begin{frontmatter}
+
+%\approved{\cuatro}%  {\tres} or {\cuatro}
+
+%\dedicatory
+%\begin{singlespace}
+%\tableofcontents \listoffigures \listoftables \pagebreak
+%\end{singlespace}
+%\myAcknowledgements{Agradecimientos}%
+%\myResumen{Resumen}%
+%\myAbstrac{Abstract}%
+\end{frontmatter}%
+\pagestyle{fancyplain}
+\include{Cap1}
+\include{Cap2}
+\include{Cap3}
+\include{Cap4}
+\include{Cap5}
+\include{Cap6}
+
+\printglossaries
+%\myappendix{Apendice}
+\begin{singlespace}
+\bibliographystyle{apalike}%plain
+\mybibliography{biblio}
+\end{singlespace}
+
+
+
+
+
+\end{document}%%%%%%%%--------------------------------------------------------

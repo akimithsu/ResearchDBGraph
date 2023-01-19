@@ -1,0 +1,14 @@
+% Thesis Abstract --------------------------------------------
+
+\begin{abstract}
+\hrule \bigskip \vspace*{1cm}
+Generar imágenes de alta calidad a partir de descripciones de texto es un problema desafiante en la visión por computadora. Casi todas las Redes Adversariales Generativas de texto a imagen existentes primero generan una imagen inicial con forma y color aproximados, y luego refinan la imagen inicial a una de alta resolución, pero la mayoría de los métodos de generación de texto a imagen existentes tienen dos problemas principales. (1) Estos métodos dependen en gran medida de la calidad de las imágenes iniciales. Si la imagen inicial no está bien inicializada, los siguientes procesos difícilmente pueden refinar la imagen a una calidad satisfactoria. (2) Cada palabra aporta un nivel diferente de importancia cuando se representan diferentes contenidos de imagen, sin embargo, la representación de texto sin cambios se utiliza en los procesos de refinamiento de imágenes existentes.
+
+En el presente trabajo nos enfocamos en el análisis de la Red Adversarial Generativa de Memoria Dinámica (DM-GAN) para la generación de imágenes de alta calidad a partir de un texto descriptivo. De acuerdo con los problemas que se presentan en otros métodos, esta red de memoria dinámica introduce un módulo de memoria dinámica para refinar el contenido de la imagen borrosa, cuando las imágenes iniciales no están bien generadas.
+Usa una puerta de escritura de memoria que está diseñada para seleccionar la información de texto importante en función del contenido de la imagen inicial, lo que permite que el método genere imágenes con precisión a partir de la descripción del texto. También utiliza una puerta de respuesta para fusionar de forma adaptativa la información leída de las memorias y las características de la imagen.
+La evaluación del modelo DM-GAN se realiza con el conjunto de datos Caltech-UCSD Birds 200. Los resultados experimentales demuestran que el modelo DM-GAN se comporta favorablemente frente a los enfoques más avanzados, esto permite al método generar imágenes con precisión a partir de la descripción del texto.
+
+\keywords{Generación de imágenes, Redes Adversariales Generativas, texto descriptivo }
+\end{abstract}
+
+

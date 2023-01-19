@@ -1,0 +1,4 @@
+- Introducción: primero definir el contexto breve del problema y la problemática
+- Objetivos específicos :(ar,er,ir,or,ur) en orden pasos para llegar al objetivo general
+- parrafo REFERENCIA PUNTO
+- encontrar pdf de conferencias de la IEEE que tengan relevancia en el ambito basado en grafos
